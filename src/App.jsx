@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import './App.css'
 import DarkMode from './components/DarkMode'
+import Faq from './components/Faq'
 
 function App() {
   const [darkMode, setdarkMode] = useState(false)
+  const [faq, setfaq] = useState(false)
 
 
 
@@ -13,6 +15,10 @@ function App() {
       <DarkMode
       darkMode={darkMode}
       setdarkMode={setdarkMode}
+      />
+      <Faq
+        faq={faq}
+        setfaq={setfaq}
       />
     </>
   )
