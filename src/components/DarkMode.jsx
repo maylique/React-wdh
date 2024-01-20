@@ -8,10 +8,15 @@ const DarkMode = ({darkMode, setdarkMode}) => {
     const buttonText = darkMode ? 'Change to white' : 'Change to black'
     const bcolor = darkMode ? '1px solid white' : '1px solid black'
     const htmlRoot = document.querySelector('html')
-const bstyle = document.querySelectorAll('.fuckthis');
-bstyle.forEach(element => {
-  element.style.border = bcolor;
-})
+    const bstyle = document.querySelectorAll('.fuckthis');
+    bstyle.forEach(element => {
+        element.style.border = bcolor;
+    })
+    const bstyle2 = document.querySelectorAll('.yo2');
+    bstyle2.forEach(element => {
+        element.style.borderTop = bcolor;
+    })
+
     htmlRoot.style.backgroundColor = background
     htmlRoot.style.color = color
     
