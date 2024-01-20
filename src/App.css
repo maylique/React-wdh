@@ -9,11 +9,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 60vw;
+  border: 1px solid white;
+  padding: .4rem;
+  margin: .4rem;
 }
 .yo2 {
   display: none;
   justify-content: space-between;
   align-items: center;
+  width: 60vw;
 }
 
 #leckMich, #omegalul {

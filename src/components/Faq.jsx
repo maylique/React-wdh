@@ -33,7 +33,7 @@ const Faq = ({ faq, setfaq }) => {
                 </div>
                 <div className="yo2">
                 <p>React syntax is ACTUALLY TRASH</p>
-            </div>
+                </div>
             </div>
         </>
      );
