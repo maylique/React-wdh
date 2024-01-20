@@ -5,6 +5,16 @@
   text-align: center;
 }
 
+.yo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#leckMich, #omegalul {
+  display: none;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;

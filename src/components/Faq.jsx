@@ -1,11 +1,15 @@
 import { useState } from "react"
+import Faq2 from "./Faq2"
 
 const Faq = ({ faq, setfaq }) => {
 
+    const [faq2, setfaq2] = useState(false)
+
+    
     
     
     const faqOpen = () => {
-        let dp = faq ? 'none' : 'block'
+        const dp = faq ? 'none' : 'flex'
         const leckMich = document.querySelector('#leckMich')
         leckMich.style.display = dp
         setfaq(!faq)
@@ -14,9 +18,17 @@ const Faq = ({ faq, setfaq }) => {
     return ( 
         <>
             <div>
-                <p>Why ist React great?</p>
-                <p id="leckMich" >its not it sucks</p>
-                <button onClick={faqOpen}>Show more</button>
+                <div className="yo">
+                    <p>Why ist React great?</p>
+                        <button onClick={faqOpen}>Show more</button>
+                </div>
+                <div className="yo" id="leckMich" >
+                    <p>its not it sucks</p>
+                < Faq2
+                    faq2 = {faq2}
+                    setfaq2 = {setfaq2}
+                />
+                </div>
             </div>
         </>
      );
