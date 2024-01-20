@@ -1,5 +1,4 @@
 import { useState } from "react"
-import Faq2 from "./Faq2"
 
 const Faq = ({ faq, setfaq }) => {
 
@@ -7,12 +6,18 @@ const Faq = ({ faq, setfaq }) => {
 
     
     
+    const text = faq ? 'Show Less' : 'Show More'
+    const text2 = faq2 ? 'Show Less' : 'Show More'
     
-    const faqOpen = () => {
+    const faqOpen = (e) => {
         const dp = faq ? 'none' : 'flex'
-        const leckMich = document.querySelector('#leckMich')
-        leckMich.style.display = dp
+        e.target.parentNode.nextSibling.style.display = dp
         setfaq(!faq)
+    }
+    const faqOpen2 = (e) => {
+        const dp = faq2 ? 'none' : 'flex'
+        e.target.parentNode.nextSibling.style.display = dp
+        setfaq2(!faq2)
     }
 
     return ( 
@@ -20,15 +25,15 @@ const Faq = ({ faq, setfaq }) => {
             <div>
                 <div className="yo">
                     <p>Why ist React great?</p>
-                        <button onClick={faqOpen}>Show more</button>
+                        <button onClick={faqOpen}>{text}</button>
                 </div>
-                <div className="yo" id="leckMich" >
+                <div className="yo2">
                     <p>its not it sucks</p>
-                < Faq2
-                    faq2 = {faq2}
-                    setfaq2 = {setfaq2}
-                />
+                    <button onClick={faqOpen2} >{text2}</button>
                 </div>
+                <div className="yo2">
+                <p>React syntax is ACTUALLY TRASH</p>
+            </div>
             </div>
         </>
      );
