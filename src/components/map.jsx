@@ -1,17 +1,7 @@
 import { useState } from 'react'
 import data from '../assets/data'
-import MapCard from './mapCard'
 
 const Map = ({ map, setmap }) => {
-
-
-
-        // const faqOpen2 = (e) => {
-        //     const dp = faq2 ? 'none' : 'flex'
-        //     e.target.parentNode.nextSibling.style.display = dp
-        //     setfaq2(!faq2)
-        // }
-
 
     return ( 
         <>
@@ -38,7 +28,7 @@ const Map = ({ map, setmap }) => {
                         setfaq2(!faq2)
                     }
                 return (
-                    <section key={index}>
+                    <section className='fuckthis' key={index}>
                         <div className="yo">
                         <p>{el.question}</p>
                                 <button onClick={faqOpen}>{textmap}</button>
@@ -58,20 +48,3 @@ const Map = ({ map, setmap }) => {
 
 export default Map;
 
-
-
-
-                            {/* < MapCard
-            {...data.map((el, index) => {
-                return (
-                    <section key={index}>
-                        <div className='yo'>
-                            question={el.question}
-                        </div>
-                        answer={el.answer}
-                        answerLong={el.answerLong}
-            </section>
-                )
-        })}
-            
-            /> */}

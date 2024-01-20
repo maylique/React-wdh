@@ -22,7 +22,7 @@ const Faq = ({ faq, setfaq }) => {
 
     return ( 
         <>
-            <div>
+            <section className="fuckthis">
                 <div className="yo">
                     <p>Why ist React great?</p>
                         <button onClick={faqOpen}>{text}</button>
@@ -34,7 +34,7 @@ const Faq = ({ faq, setfaq }) => {
                 <div className="yo2">
                 <p>React syntax is ACTUALLY TRASH</p>
                 </div>
-            </div>
+            </section>
         </>
      );
 }

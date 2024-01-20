@@ -10,11 +10,16 @@
   justify-content: space-between;
   align-items: center;
   width: 60vw;
-  border: 1px solid white;
-  padding: .4rem;
-  margin: .4rem;
 }
+
+.fuckthis {
+  border: 1px solid white;
+  padding: 1rem;
+  margin: 2rem 0;
+}
+
 .yo2 {
+  border-top: 1px solid white;
   display: none;
   justify-content: space-between;
   align-items: center;
