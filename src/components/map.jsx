@@ -16,8 +16,10 @@ const Map = ({ map, setmap }) => {
     
     
                 const faqOpen = (e) => {
-                        const dp = faq ? 'none' : 'flex'
+                    const dp = faq ? 'none' : 'block'
+                    const bla = faq ? 'none' : 'flex'
                     e.target.parentNode.nextSibling.style.display = dp
+                    e.target.parentNode.nextSibling.firstChild.style.display = bla
                     e.target.textContent = textmap
                         setfaq(!faq)
                     }
@@ -33,13 +35,15 @@ const Map = ({ map, setmap }) => {
                         <p>{el.question}</p>
                                 <button onClick={faqOpen}>{textmap}</button>
                         </div>
-                    <div className='yo2'>
-                        <p>{el.answer}</p>
-                        <button onClick={faqOpen2}>{textmap2}</button>
-                    </div>
-                    <div className='yo2'>
-                        <p>{el.answerLong}</p>
-                    </div>
+                    <section className='deineMuddah'>
+                        <div className='yo2'>
+                            <p>{el.answer}</p>
+                            <button onClick={faqOpen2}>{textmap2}</button>
+                        </div>
+                        <div className='yo2'>
+                            <p>{el.answerLong}</p>
+                        </div>
+                    </section>
                     </section>
                 )})}
         </>

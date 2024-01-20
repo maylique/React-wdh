@@ -11,6 +11,10 @@
   align-items: center;
 }
 
+.deinemudda {
+  display: none;
+}
+
 .fuckthis {
   border: 1px solid white;
   padding: 1rem;
