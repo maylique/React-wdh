@@ -5,6 +5,7 @@ const DarkMode = ({darkMode, setdarkMode}) => {
 
     const background =  darkMode ? 'black' : 'white'
     const color = darkMode ? 'white' : 'black'
+    const DarkModeText = darkMode ? 'Dark Mode' : 'Cringe Mode'
     const buttonText = darkMode ? 'Change to white' : 'Change to black'
     const bcolor = darkMode ? '1px solid white' : '1px solid black'
     const htmlRoot = document.querySelector('html')
@@ -26,6 +27,7 @@ const DarkMode = ({darkMode, setdarkMode}) => {
     return ( 
         <>
             <div>
+            <h1>{DarkModeText}</h1>
                 <button onClick={darkModeToggle}>{buttonText}</button>
             </div>
         </>

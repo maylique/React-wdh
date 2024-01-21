@@ -12,7 +12,6 @@ function App() {
 
   return (
     <>
-      <h1>Dark Mode</h1>
       <DarkMode
       darkMode={darkMode}
       setdarkMode={setdarkMode}
