@@ -21,14 +21,19 @@ const Map = ({ map, setmap }) => {
                     e.target.parentNode.nextSibling.style.display = dp
                     e.target.parentNode.nextSibling.firstChild.style.display = bla
                     e.target.textContent = textmap
-                        setfaq(!faq)
+                    if (faq === false) {
+                        e.target.parentNode.nextSibling.lastChild.style.display = 'none'
+                        setfaq2(false)
                     }
+                    setfaq(!faq)
+                }
                 const faqOpen2 = (e) => {
-                        const dp2 = faq2 ? 'none' : 'flex'
+                    const dp2 = faq2 ? 'none' : 'flex'
                     e.target.parentNode.nextSibling.style.display = dp2
                     e.target.textContent = textmap2
-                        setfaq2(!faq2)
-                    }
+                    setfaq2(!faq2)
+                }
+                
                 return (
                     <section className='fuckthis' key={index}>
                         <div className="yo">
