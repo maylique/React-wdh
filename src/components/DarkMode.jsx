@@ -3,7 +3,7 @@ import { useState } from "react"
 
 const DarkMode = ({darkMode, setdarkMode}) => {
 
-    const background =  darkMode ? 'black' : 'white'
+    const background =  darkMode ? '#282828' : 'white'
     const color = darkMode ? 'white' : 'black'
     const DarkModeText = darkMode ? 'Dark Mode' : 'Cringe Mode'
     const buttonText = darkMode ? 'Change to white' : 'Change to black'
