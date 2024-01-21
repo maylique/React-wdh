@@ -24,7 +24,7 @@ const Faq = ({ faq, setfaq }) => {
         <>
             <section className="fuckthis">
                 <div className="yo">
-                    <p>Why ist React great?</p>
+                    <p>--- Lv1 ignore this section --- </p>
                         <button onClick={faqOpen}>{text}</button>
                 </div>
                 <div className="yo2">
